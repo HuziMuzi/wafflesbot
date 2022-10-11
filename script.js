@@ -101,7 +101,7 @@ function formSubmit() {
         let dateFormat = moment().format("MM-DD-YYYY, HH:mm:ss");
         let info = "Дата: " + dateFormat + "%0A" + "Имя: \n" + name.value + "%0A" + "Телефон: " + tel.value + "%0A" +
             "Оценка напитков: " + sliderDrink + "%0A" +
-            "Оценка выпечки: " + sliderWaffles + "%0A" + "Комментарий: "+ review.value;
+            "Оценка выпечки: " + sliderWaffles + "%0A" + "Комментарий: " + review.value;
         request()
 
         // axios.get('https://62a1085b356d093c4c40443b.mockapi.io/codes')
