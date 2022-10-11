@@ -8,14 +8,11 @@ const CHAT_ID = "-1001705879338"
 
 
 const name = document.querySelector('.name')
-// const email = document.getElementById('email')
 const tel = document.getElementById('tel')
-// const select = document.querySelector('.point');
-// const selectValue = select.value;
 const review = document.getElementById('review')
 let warning = document.querySelector('.err')
-let btn = document.querySelector(".button_submit")
-let rule = null
+let btn = document.querySelector("#button_submit")
+// let rule = null
 tel.value = '+'
 
 let reg2 = /(?:\+375|80)\s?\(?\d\d\)?\s?\d\d(?:\d[\-\s]\d\d[\-\s]\d\d|[\-\s]\d\d[\-\s]\d\d\d|\d{5})/
@@ -83,15 +80,9 @@ rangeSliderWaffles.addEventListener('change', () => {
 //
 // }
 
-
-let disableBtn = false
 btn.addEventListener('click', formSubmit)
 
-
-// let currnet = 0
-
 function formSubmit() {
-
     if (!reg.test(name.value)) {
         console.log("input is not valide ", name.value)
         name.scrollIntoView({behavior: "smooth", block: "center"})
@@ -135,46 +126,55 @@ function formSubmit() {
         let info = "Дата: " + dateFormat + "%0A" + "Имя: \n" + name.value + "%0A" + "Телефон: " + tel.value + "%0A" +
             "Оценка напитков: " + sliderDrink + "%0A" +
             "Оценка выпечки: " + sliderWaffles + "%0A" + "Комментарий: " + review.value;
+        request()
 
-        // select.value
-
-        axios.get('https://62a1085b356d093c4c40443b.mockapi.io/codes')
-            .then(response => {
-                btn.setAttribute('button', 'disabled')
-
-                return response.data
-            })
-            .then(codes => {
-                let id = codes.length - 1
-                let currCode = codes[id].code
-                console.log(codes)
-                console.log(id)
-                console.log(currCode)
-                axios.get(`https://api.telegram.org/bot${TOKEN2}/sendMessage?chat_id=${CHAT_ID2}&parse_mode=html&text=${info}"%0AКод: ${currCode}`)
-                    .then(
-                        () => {
-                            seccessBlock.classList.remove('seccess-hide')
-                            spanCode.innerHTML = currCode
-                            seccessBlock.scrollIntoView({behavior: "smooth", block: "center"})
-                        }
-                    )
-                    .then(() => {
-                        axios.delete(`https://62a1085b356d093c4c40443b.mockapi.io/codes/${id}`)
-                            .then((res) => {
-                                console.log('Успешно удалено')
-                                // window.location.href = `done.html`
-                            })
-                            .catch(error => console.log(error))
-                        console.log(error)
-                    })
-            })
-
-
-
-        // async function request() {
-        //     await axios.get('https://62a1085b356d093c4c40443b.mockapi.io/codes')
+        // axios.get('https://62a1085b356d093c4c40443b.mockapi.io/codes')
+        //     .then(response => {
+        //         btn.setAttribute('button', 'disabled')
         //
-        // }
+        //         return response.data
+        //     })
+        //     .then(codes => {
+        //         let id = codes.length - 1
+        //         let currCode = codes[id].code
+        //         console.log(codes)
+        //         console.log(id)
+        //         console.log(currCode)
+        //         axios.get(`https://api.telegram.org/bot${TOKEN2}/sendMessage?chat_id=${CHAT_ID2}&parse_mode=html&text=${info}"%0AКод: ${currCode}`)
+        //             .then(
+        //                 () => {
+        //                     seccessBlock.classList.remove('seccess-hide')
+        //                     spanCode.innerHTML = currCode
+        //                     seccessBlock.scrollIntoView({behavior: "smooth", block: "center"})
+        //                 }
+        //             )
+        //             .then(() => {
+        //                 axios.delete(`https://62a1085b356d093c4c40443b.mockapi.io/codes/${id}`)
+        //                     .then((res) => {
+        //                         console.log('Успешно удалено')
+        //                         // window.location.href = `done.html`
+        //                     })
+        //                     .catch(error => console.log(error))
+        //                 console.log(error)
+        //             })
+        //     })
+
+
+        async function request() {
+            btn.classList.add("button--loading")
+            await btn.setAttribute('disabled', true)
+
+            // let response = await axios.get('https://62a1085b356d093c4c40443b.mockapi.io/codes')
+            let codes = await response.data
+            let id =  await codes.length - 1
+            let currCode = await codes[id].code
+            // await axios.get(`https://api.telegram.org/bot${TOKEN2}/sendMessage?chat_id=${CHAT_ID2}&parse_mode=html&text=${info}"%0AКод: ${currCode}`)
+                seccessBlock.classList.remove('seccess-hide')
+                spanCode.innerHTML = currCode
+                seccessBlock.scrollIntoView({behavior: "smooth", block: "center"})
+            // await axios.delete(`https://62a1085b356d093c4c40443b.mockapi.io/codes/${id}`)
+            btn.classList.remove("button--loading")
+        }
 
 
         // axios.delete(`https://62a1085b356d093c4c40443b.mockapi.io/codes/1`)
@@ -182,7 +182,6 @@ function formSubmit() {
         //         console.log('Успешно удалено')
         //     })
         //     .catch(error => console.log(error))
-
         // axios.get(`https://api.telegram.org/bot${TOKEN2}/sendMessage?chat_id=${CHAT_ID2}&parse_mode=html&text=${info}`).then((r) => {
         //     btn.setAttribute('button', 'disabled')
         //     window.location.href = `done.html`
@@ -629,7 +628,7 @@ let a = [
 let b = a.map(el => el.id = String(el.id))
 console.log(b)
 
-//
+
 // [
 // {
 //     "id": "0",
@@ -768,7 +767,7 @@ console.log(b)
 //         "code": 3971
 //     },
 //     {
-//         "id": 34,
+//         "id": "34",
 //         "code": 2613
 //     },
 //     {
