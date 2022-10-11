@@ -128,7 +128,7 @@ function formSubmit() {
     // 			console.log("Спасибо за оценку")
     //
     // 		}
-    if (reg.test(name.value) == true && reg2.test(tel.value) == true && sliderDrink && sliderWaffles) {
+    if (reg.test(name.value) == true && reg2.test(tel.value) == true && sliderDrink !== null && sliderWaffles !== null) {
 
         let dateFormat = moment().format("MM-DD-YYYY, HH:mm:ss");
         let info = "Дата: " + dateFormat + "%0A" + "Имя: \n" + name.value + "%0A" + "Телефон: " + tel.value + "%0A" +
