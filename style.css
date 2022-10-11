@@ -133,10 +133,6 @@ input:focus, textarea:focus, input:focus-visible, textarea:focus-visible {
 }
 
 
-/*#button_submit:disabled {*/
-/*	background-color: green;*/
-/*}*/
-
 
 .active{
 	background-color: var(--active-fill-color);
@@ -162,30 +158,7 @@ input:focus, textarea:focus, input:focus-visible, textarea:focus-visible {
 
 
 
-.divider-check::before{
-	display: block;
-	background-color: var(--main-color);
-	content: '';
-	position: absolute;
-	left: 0;
-	height: 2px;
-	top: 70px;
-	width: 57%;
-}
 
-.button__circle {
-	border-radius: 50%;
-	height: 40px;
-	width: 40px;
-	margin: 0px 10px 15px 5px ;
-}
-
-button:last-child{
-	margin-right: 0;
-}
-button:nth-child(5){
-	margin-right: 0;
-}
 
 .form-controls {
 	text-align: right;
@@ -221,9 +194,6 @@ button:nth-child(5){
 	height: 124px;
 }
 
-.required:after{
-
-}
 
 .star::after{
 	content: ' *';
@@ -252,7 +222,6 @@ button:nth-child(5){
 	-moz-box-shadow: 0 0 10px #FF0000;
 	-webkit-box-shadow: 0 0 10px #FF0000;
 	box-shadow: 0 0 10px #FF0000;
-	/* border: 1px solid #F08080; */
 	
 }
 
@@ -261,7 +230,6 @@ button:nth-child(5){
 }
 
 .box-minmax {
-	/*margin-top: 5px;*/
 	width: 260px;
 	display: flex;
 	justify-content: space-between;
@@ -382,10 +350,10 @@ button:nth-child(5){
 	padding: 5px;
 }
 
-.seccess-hide {
-	display: none;
-	visibility: hidden;
-}
+/*.seccess-hide {*/
+/*	display: none;*/
+/*	visibility: hidden;*/
+/*}*/
 
 /* -webkit-transform: translateZ(0);
 -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%); */
