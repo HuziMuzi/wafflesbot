@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Пожалуйста, оставьте отзыв</title>
+</head>
+
+<body>
+<main>
+    <div class="container">
+        <div>
+            <div class="logo">
+                <img class="logo-img" src="/L&W_1.png" alt="">
+                <div class="logo-name">То что нас объединяет</div>
+            </div>
+            <h1 class="title">Помогите нам стать лучше для Вас</h1>
+        </div>
+        <div class="divider"></div>
+        <div class="content">
+            <!-- <form action="done.html" id="form" class="form_input"> -->
+            <label for="name" class="label-required star ">Ваше имя</label>
+            <input class="name required " type="text" name="name" id="name" placeholder="Имя">
+
+            <!--					<label for="email" class="label-required ">Адрес эектронной почты</label>-->
+            <!--					<input type="email" name="email" id="email" placeholder="email@mail.com">-->
+
+            <label  class="label-required star ">Номер телефона</label>
+            <input type="tel" class="tel  required" name="tel" id="tel">
+
+
+            <div>
+                <p class="mark-text ">Оцените напитки:<span class="star"></span><br></p>
+                <div class="range-slider">
+                    <span id="rs-bullet-drink" class="rs-label">0</span>
+                    <input id="rs-range-line-drink" class="rs-range" type="range" value="0" min="0" max="10" step="0.1">
+                    <div class="box-minmax">
+                        <span>0</span><span>10</span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <p class="mark-text ">Оцените выпечку:<span class="star"></span><br></p>
+                <div class="range-slider">
+                    <span id="rs-bullet-vaffles" class="rs-label">0</span>
+                    <input id="rs-range-line-vaffles" class="rs-range" type="range" value="0" min="0" max="10" step="0.1" >
+                    <div class="box-minmax">
+                        <span>0</span><span>10</span>
+                    </div>
+                </div>
+            </div>
+            <div class="err">Пожалуйста поставьте оценку</div>
+            <div class="review">
+                <label for="review">Текст отзыва</label>
+                <textarea name="text" id="review" minlength="10" placeholder="Введите текст отзыва здесь…"></textarea>
+            </div>
+
+            <div class="form-controls">
+                <button type="submit" class="button button_submit">Отправить</button>
+            </div>
+
+            <div id="seccess" class="seccess-request seccess-hide">
+                <img class="img-seccess" src="https://cdn-icons-png.flaticon.com/512/845/845646.png" alt="">
+                <div>Спасибо! За ваш отзыв. Промокод на бесплатный кофе:<span id="span-code"></span></div>
+
+            </div>
+
+        </div>
+    </div>
+</main>
+<script type="text/JavaScript" src=" https://MomentJS.com/downloads/moment.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
+        integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+</body>
+
+</html>

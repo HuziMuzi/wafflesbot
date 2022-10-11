@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aa4e079c-ceca-4a43-a52e-59bbf6cdf4e9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vaffles-bot.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../L&amp;W_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bg1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bg2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bg3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../check-svgrepo-com.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../done.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fon-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fon-clear.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fon-clear2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fon-clear3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fon.pxd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../font/DINPro-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../style.css" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FfDmja2rvCeZejoJ0Awr3OfmBx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/andrejdavidovic/Desktop/Project/wafleBot/waffles-bot&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa4e079c-ceca-4a43-a52e-59bbf6cdf4e9" name="Changes" comment="" />
+      <created>1664874406125</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664874406125</updated>
+      <workItem from="1664874408212" duration="2790000" />
+      <workItem from="1664952005153" duration="5502000" />
+      <workItem from="1664957973195" duration="26000" />
+      <workItem from="1664958001380" duration="983000" />
+      <workItem from="1664959297151" duration="653000" />
+      <workItem from="1665309425658" duration="2412000" />
+      <workItem from="1665311845953" duration="817000" />
+      <workItem from="1665312684644" duration="5485000" />
+      <workItem from="1665336408607" duration="1333000" />
+      <workItem from="1665392394004" duration="16605000" />
+      <workItem from="1665478001547" duration="56000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
