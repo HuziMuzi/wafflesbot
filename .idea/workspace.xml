@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa4e079c-ceca-4a43-a52e-59bbf6cdf4e9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/vaffles-bot.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../L&amp;W_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bg1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bg2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bg3.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../check-svgrepo-com.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../done.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fon-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fon-clear.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fon-clear2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fon-clear3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fon.pxd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../font/DINPro-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../style.css" beforeDir="false" />
-    </list>
+    <list default="true" id="aa4e079c-ceca-4a43-a52e-59bbf6cdf4e9" name="Changes" comment="add loading for button submit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,8 +49,16 @@
       <workItem from="1665336408607" duration="1333000" />
       <workItem from="1665392394004" duration="16605000" />
       <workItem from="1665478001547" duration="56000" />
-      <workItem from="1665478060968" duration="3206000" />
+      <workItem from="1665478060968" duration="3958000" />
     </task>
+    <task id="LOCAL-00001" summary="add loading for button submit">
+      <created>1665481412858</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665481412858</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,5 +74,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add loading for button submit" />
+    <option name="LAST_COMMIT_MESSAGE" value="add loading for button submit" />
   </component>
 </project>

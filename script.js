@@ -10,7 +10,7 @@ const CHAT_ID = "-1001705879338"
 const name = document.querySelector('.name')
 const tel = document.getElementById('tel')
 const review = document.getElementById('review')
-let warning = document.querySelector('.err')
+let warning = document.querySelector('#err')
 let btn = document.querySelector("#button_submit")
 // let rule = null
 tel.value = '+'
@@ -99,6 +99,14 @@ function formSubmit() {
         tel.classList.remove('error')
         console.log("Input VALIDE")
     }
+
+    if (sliderDrink === null || sliderWaffles === null) {
+        warning.setAttribute("style", "display:block")
+        warning.scrollIntoView({behavior: "smooth", block: "center"})
+    } else {
+        warning.classList.remove('warning')
+    }
+
     // if(select.value ==='') {
     // 			console.log("input is not valide ", select.value)
     // 			select.scrollIntoView({behavior: "smooth", block: "center"})
@@ -120,7 +128,7 @@ function formSubmit() {
     // 			console.log("Спасибо за оценку")
     //
     // 		}
-    if (reg.test(name.value) == true && reg2.test(tel.value) == true) {
+    if (reg.test(name.value) == true && reg2.test(tel.value) == true && sliderDrink && sliderWaffles) {
 
         let dateFormat = moment().format("MM-DD-YYYY, HH:mm:ss");
         let info = "Дата: " + dateFormat + "%0A" + "Имя: \n" + name.value + "%0A" + "Телефон: " + tel.value + "%0A" +
@@ -166,12 +174,12 @@ function formSubmit() {
 
             let response = await axios.get('https://62a1085b356d093c4c40443b.mockapi.io/codes')
             let codes = await response.data
-            let id =  await codes.length - 1
+            let id = await codes.length - 1
             let currCode = await codes[id].code
             await axios.get(`https://api.telegram.org/bot${TOKEN2}/sendMessage?chat_id=${CHAT_ID2}&parse_mode=html&text=${info}"%0AКод: ${currCode}`)
-                seccessBlock.classList.remove('seccess-hide')
-                spanCode.innerHTML = currCode
-                seccessBlock.scrollIntoView({behavior: "smooth", block: "center"})
+            seccessBlock.classList.remove('seccess-hide')
+            spanCode.innerHTML = currCode
+            seccessBlock.scrollIntoView({behavior: "smooth", block: "center"})
             await axios.delete(`https://62a1085b356d093c4c40443b.mockapi.io/codes/${id}`)
             btn.classList.remove("button--loading")
         }
