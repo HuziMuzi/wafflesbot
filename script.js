@@ -45,7 +45,7 @@ function showSliderValue(bullet, slider) {
 }
 
 let sliderDrink = null
-let sliderWaffles = null
+let sliderWaffles = -1
 
 // console.log(rangeSliderDrink.value)
 rangeSliderDrink.addEventListener('change', () => {
@@ -100,7 +100,7 @@ function formSubmit() {
         console.log("Input VALIDE")
     }
 
-    if (sliderDrink === null || sliderWaffles === null) {
+    if (sliderDrink === null || sliderWaffles === -1) {
         warning.setAttribute("style", "display:block")
         warning.scrollIntoView({behavior: "smooth", block: "center"})
     } else {
@@ -128,7 +128,7 @@ function formSubmit() {
     // 			console.log("Спасибо за оценку")
     //
     // 		}
-    if (reg.test(name.value) == true && reg2.test(tel.value) == true && sliderDrink !== null && sliderWaffles !== null) {
+    if (reg.test(name.value) == true && reg2.test(tel.value) == true && sliderDrink !== null && sliderWaffles !== -1) {
 
         let dateFormat = moment().format("MM-DD-YYYY, HH:mm:ss");
         let info = "Дата: " + dateFormat + "%0A" + "Имя: \n" + name.value + "%0A" + "Телефон: " + tel.value + "%0A" +
