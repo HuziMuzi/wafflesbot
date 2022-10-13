@@ -1,4 +1,4 @@
-// import {apiRequest} from "./api";
+
 
 const TOKEN2 = '5716100119:AAFXgbMHxos7EoCAzHSp-bDG4NMwEokqET0'
 const CHAT_ID2 = "454535029"
@@ -125,17 +125,17 @@ function formSubmit() {
                 let id = await codes.length - 1
                 let currCode = await codes[id].code
                 await axios.get(`https://api.telegram.org/bot${TOKEN2}/sendMessage?chat_id=${CHAT_ID2}&parse_mode=html&text=${info}%0AКод: ${currCode}`)
+                await axios.delete(`https://62a1085b356d093c4c40443b.mockapi.io/codes/${id}`)
                 seccessBlock.classList.remove('seccess-hide')
                 spanCode.innerHTML =  `Спасибо! За ваш отзыв. Промокод на бесплатный кофе: ${currCode}`
                 seccessBlock.scrollIntoView({behavior: "smooth", block: "center"})
             } else {
-                apiRequest.getWithCode('Спасибо За ваш отзыв!')
                 await axios.get(`https://api.telegram.org/bot${TOKEN2}/sendMessage?chat_id=${CHAT_ID2}&parse_mode=html&text=${info}`)
                 seccessBlock.classList.remove('seccess-hide')
                 spanCode.innerHTML=`Спасибо! За ваш отзыв.`
                 seccessBlock.scrollIntoView({behavior: "smooth", block: "center"})
             }
-            await axios.delete(`https://62a1085b356d093c4c40443b.mockapi.io/codes/${id}`)
+
             btn.classList.remove("button--loading")
 
         }

@@ -80,7 +80,7 @@ input:focus, textarea:focus, input:focus-visible, textarea:focus-visible {
 
 }
 .content{
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 }
 
 textarea{
@@ -164,19 +164,6 @@ textarea{
 		margin-top: 30px;
 }
 
-
-
-.divider-check::before{
-	display: block;
-	background-color: var(--main-color);
-	content: '';
-	position: absolute;
-	left: 0;
-	height: 2px;
-	top: 70px;
-	width: 57%;
-}
-
 .button__circle {
 	border-radius: 50%;
 	height: 40px;
@@ -184,38 +171,11 @@ textarea{
 	margin: 0px 10px 15px 5px ;
 }
 
-/*button:last-child{*/
-/*	margin-right: 0;*/
-/*}*/
-/*button:nth-child(5){*/
-/*	margin-right: 0;*/
-/*}*/
 
 .form-controls {
 	text-align: right;
+
 }
-
-/*.button_submit {*/
-/*	background-color: var(--main-color);*/
-/*	border: none;*/
-/*	font-size: 14px;*/
-/*	line-height: 22px;*/
-/*	padding: 5px 16px;*/
-/*	color: white;*/
-/*	*/
-/*}*/
-
-/*.button_submit:hover {*/
-/*	background-color: var(--hover-stroke-color);*/
-/*	border: none;*/
-/*	color: white;*/
-/*}*/
-
-/*.button_submit:active {*/
-/*	background-color: var(--active-stroke-color);*/
-/*	border: none;*/
-/*	color: white;*/
-/*}*/
 
 .check-circle{
 	text-align: center;
@@ -364,8 +324,7 @@ textarea{
 
 .seccess-request{
 	font-family: 'VafflesFont';
-	margin-top: 30px;
-	/*background-color: #e8cc95;*/
+	margin-top: 15px;
 
 }
 .img-seccess{
@@ -376,7 +335,6 @@ textarea{
 	margin-bottom: 10px;
 
 }
-
 .seccess-request span{
 	font-size: 20px;
 	display: inline-block;
@@ -389,6 +347,3 @@ textarea{
 	display: none;
 	visibility: hidden;
 }
-
-/* -webkit-transform: translateZ(0);
--webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%); */
