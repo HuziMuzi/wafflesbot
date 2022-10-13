@@ -1,7 +1,8 @@
 
 
 const TOKEN2 = '5716100119:AAFXgbMHxos7EoCAzHSp-bDG4NMwEokqET0'
-const CHAT_ID2 = "454535029"
+const CHAT_ID2 = "-1001800743896"
+// const CHAT_ID2 = "454535029"
 
 
 const name = document.querySelector('.name')

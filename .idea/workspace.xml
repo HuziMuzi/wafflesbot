@@ -7,8 +7,6 @@
       <change afterPath="$PROJECT_DIR$/../../todo13v2/src/api/todolist-api.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../todo13v2/src/stories/todolist-api.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +69,7 @@
       <workItem from="1665392394004" duration="16605000" />
       <workItem from="1665478001547" duration="56000" />
       <workItem from="1665478060968" duration="6873000" />
-      <workItem from="1665690581167" duration="3514000" />
+      <workItem from="1665690581167" duration="4564000" />
     </task>
     <task id="LOCAL-00001" summary="add loading for button submit">
       <created>1665481412858</created>
