@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa4e079c-ceca-4a43-a52e-59bbf6cdf4e9" name="Changes" comment="add loading for button submit" />
+    <list default="true" id="aa4e079c-ceca-4a43-a52e-59bbf6cdf4e9" name="Changes" comment="add loading for button submit">
+      <change afterPath="$PROJECT_DIR$/../../todo/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../todo/src/stories/AddItemForm.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../todo13v2/src/api/todolist-api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../todo13v2/src/stories/todolist-api.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -49,7 +66,8 @@
       <workItem from="1665336408607" duration="1333000" />
       <workItem from="1665392394004" duration="16605000" />
       <workItem from="1665478001547" duration="56000" />
-      <workItem from="1665478060968" duration="6156000" />
+      <workItem from="1665478060968" duration="6873000" />
+      <workItem from="1665690581167" duration="1875000" />
     </task>
     <task id="LOCAL-00001" summary="add loading for button submit">
       <created>1665481412858</created>

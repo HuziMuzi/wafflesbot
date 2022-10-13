@@ -1,3 +1,4 @@
+// import {apiRequest} from "./api";
 
 const TOKEN2 = '5716100119:AAFXgbMHxos7EoCAzHSp-bDG4NMwEokqET0'
 const CHAT_ID2 = "454535029"
@@ -48,28 +49,6 @@ rangeSliderWaffles.addEventListener('change', () => {
     console.log(sliderWaffles)
 })
 
-// const buttons = [];
-// for(let i = 1; i <= 10; i++) {
-// 	let button = document.createElement('button')
-// 	block.appendChild(button)
-// 	button.innerHTML = i
-// 	button.classList.add('button__circle', 'button')
-//
-// 	buttons.push(button);
-//
-//
-// 	button.addEventListener('click', function btnSet(){
-// 		rule = button.innerHTML
-// 		buttons.forEach((i)=>{
-// 			i.classList.remove("active")
-// 		})
-// 		button.classList.add("active")
-// 		console.log(rule)
-// 	})
-//
-//
-// }
-
 btn.addEventListener('click', formSubmit)
 
 function formSubmit() {
@@ -90,7 +69,7 @@ function formSubmit() {
         console.log("Input VALIDE")
     }
 
-    if (sliderDrink === null || sliderWaffles === -1) {
+    if (sliderDrink === null || sliderWaffles === null) {
         warning.setAttribute("style", "display:block")
         warning.scrollIntoView({behavior: "smooth", block: "center"})
     } else {
@@ -101,7 +80,7 @@ function formSubmit() {
         let dateFormat = moment().format("MM-DD-YYYY, HH:mm:ss");
         let info = "Дата: " + dateFormat + "%0A" + "Имя: \n" + name.value + "%0A" + "Телефон: " + tel.value + "%0A" +
             "Оценка напитков: " + sliderDrink + "%0A" +
-            "Оценка выпечки: " + sliderWaffles + "%0A" + "Комментарий: " + review.value;
+            "Оценка выпечки: " + sliderWaffles + "%0A" + "Комментарий:" + review.value;
         request()
 
         // axios.get('https://62a1085b356d093c4c40443b.mockapi.io/codes')
@@ -140,15 +119,25 @@ function formSubmit() {
             await btn.setAttribute('disabled', true)
 
             let response = await axios.get('https://62a1085b356d093c4c40443b.mockapi.io/codes')
+
             let codes = await response.data
-            let id = await codes.length - 1
-            let currCode = await codes[id].code
-            await axios.get(`https://api.telegram.org/bot${TOKEN2}/sendMessage?chat_id=${CHAT_ID2}&parse_mode=html&text=${info}"%0AКод: ${currCode}`)
-            seccessBlock.classList.remove('seccess-hide')
-            spanCode.innerHTML = currCode
-            seccessBlock.scrollIntoView({behavior: "smooth", block: "center"})
+            if (codes.length !== 0) {
+                let id = await codes.length - 1
+                let currCode = await codes[id].code
+                await axios.get(`https://api.telegram.org/bot${TOKEN2}/sendMessage?chat_id=${CHAT_ID2}&parse_mode=html&text=${info}%0AКод: ${currCode}`)
+                seccessBlock.classList.remove('seccess-hide')
+                spanCode.innerHTML =  `Спасибо! За ваш отзыв. Промокод на бесплатный кофе: ${currCode}`
+                seccessBlock.scrollIntoView({behavior: "smooth", block: "center"})
+            } else {
+                apiRequest.getWithCode('Спасибо За ваш отзыв!')
+                await axios.get(`https://api.telegram.org/bot${TOKEN2}/sendMessage?chat_id=${CHAT_ID2}&parse_mode=html&text=${info}`)
+                seccessBlock.classList.remove('seccess-hide')
+                spanCode.innerHTML=`Спасибо! За ваш отзыв.`
+                seccessBlock.scrollIntoView({behavior: "smooth", block: "center"})
+            }
             await axios.delete(`https://62a1085b356d093c4c40443b.mockapi.io/codes/${id}`)
             btn.classList.remove("button--loading")
+
         }
     }
 }

@@ -37,6 +37,10 @@ textarea {
 	resize: vertical;
 }
 
+.input__info {
+	border-radius: 10px;
+}
+
 label {
 	color: #595959;
 	display: block;
@@ -79,14 +83,18 @@ input:focus, textarea:focus, input:focus-visible, textarea:focus-visible {
 	margin-bottom: 10px;
 }
 
+textarea{
+	border-radius: 10px;
+
+}
 
 .button {
+	border-radius: 10px;
 	position: relative;
 	padding: 8px 16px;
 	background: var(--main-color);
 	border: none;
 	outline: none;
-	border-radius: 2px;
 	cursor: pointer;
 }
 
@@ -95,6 +103,7 @@ input:focus, textarea:focus, input:focus-visible, textarea:focus-visible {
 }
 
 .button__text {
+
 	font-size: 14px;
 	font-family: 'VafflesFont';
 	color: #ffffff;
@@ -131,11 +140,6 @@ input:focus, textarea:focus, input:focus-visible, textarea:focus-visible {
 		transform: rotate(1turn);
 	}
 }
-
-
-/*#button_submit:disabled {*/
-/*	background-color: green;*/
-/*}*/
 
 
 .active{
@@ -180,37 +184,38 @@ input:focus, textarea:focus, input:focus-visible, textarea:focus-visible {
 	margin: 0px 10px 15px 5px ;
 }
 
-button:last-child{
-	margin-right: 0;
-}
-button:nth-child(5){
-	margin-right: 0;
-}
+/*button:last-child{*/
+/*	margin-right: 0;*/
+/*}*/
+/*button:nth-child(5){*/
+/*	margin-right: 0;*/
+/*}*/
 
 .form-controls {
 	text-align: right;
 }
 
-.button_submit {
-	background-color: var(--main-color);
-	border: none;
-	font-size: 14px;
-	line-height: 22px;
-	padding: 5px 16px;
-	color: white;
-}
+/*.button_submit {*/
+/*	background-color: var(--main-color);*/
+/*	border: none;*/
+/*	font-size: 14px;*/
+/*	line-height: 22px;*/
+/*	padding: 5px 16px;*/
+/*	color: white;*/
+/*	*/
+/*}*/
 
-.button_submit:hover {
-	background-color: var(--hover-stroke-color);
-	border: none;
-	color: white;
-}
+/*.button_submit:hover {*/
+/*	background-color: var(--hover-stroke-color);*/
+/*	border: none;*/
+/*	color: white;*/
+/*}*/
 
-.button_submit:active {
-	background-color: var(--active-stroke-color);
-	border: none;
-	color: white;
-}
+/*.button_submit:active {*/
+/*	background-color: var(--active-stroke-color);*/
+/*	border: none;*/
+/*	color: white;*/
+/*}*/
 
 .check-circle{
 	text-align: center;
