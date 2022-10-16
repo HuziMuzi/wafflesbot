@@ -2,7 +2,6 @@
 
 const TOKEN2 = '5716100119:AAFXgbMHxos7EoCAzHSp-bDG4NMwEokqET0'
 const CHAT_ID2 = "-1001800743896"
-// const CHAT_ID2 = "454535029"
 
 
 const name = document.querySelector('.name')
@@ -51,7 +50,7 @@ rangeSliderWaffles.addEventListener('change', () => {
 })
 
 btn.addEventListener('click', formSubmit)
-
+window.scrollTo(0, parseInt(scrollY || '0') * -1);
 function formSubmit() {
     if (!reg.test(name.value)) {
         console.log("input is not valide ", name.value)
@@ -118,28 +117,11 @@ function formSubmit() {
         async function request() {
             btn.classList.add("button--loading")
             await btn.setAttribute('disabled', true)
-
-            let response = await axios.get('https://62a1085b356d093c4c40443b.mockapi.io/codes')
-
-            let codes = await response.data
-            if (codes.length !== 0) {
-                let id = await codes.length - 1
-                let currCode = await codes[id].code
-                await axios.get(`https://api.telegram.org/bot${TOKEN2}/sendMessage?chat_id=${CHAT_ID2}&parse_mode=html&text=${info}%0AКод: ${currCode}`)
-                await axios.delete(`https://62a1085b356d093c4c40443b.mockapi.io/codes/${id}`)
-                seccessBlock.classList.remove('seccess-hide')
-                spanCode.innerHTML =  `Спасибо! За ваш отзыв. Промокод на бесплатный кофе: ${currCode}`
-                seccessBlock.scrollIntoView({behavior: "smooth", block: "center"})
-            } else {
                 await axios.get(`https://api.telegram.org/bot${TOKEN2}/sendMessage?chat_id=${CHAT_ID2}&parse_mode=html&text=${info}`)
                 seccessBlock.classList.remove('seccess-hide')
                 spanCode.innerHTML=`Спасибо! За ваш отзыв.`
                 seccessBlock.scrollIntoView({behavior: "smooth", block: "center"})
-            }
-
             btn.classList.remove("button--loading")
-
         }
     }
 }
-
